@@ -1,0 +1,509 @@
+div {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+/* nav bar css */
+.nav-bar {
+    display: flex;
+    background-color: rgba(31, 41, 53, 0.51);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    padding: 0.7% 0%;
+    z-index: 10;
+}
+
+.nav-bar .title {
+    margin: 0% 0% 0% 7%;
+    font-size: 200%;
+}
+
+.nav-bar .title:hover {
+    color: orange;
+}
+
+.nav-bar .menu {
+    float: right;
+    display: inline-flex;
+    margin: 0% 0% 0% 50%;
+}
+
+.nav-bar .menu div {
+    margin: 0% 0% 0% 11%;
+    padding: 3% 0%;
+    font-size: 120%;
+    font-weight: 70%;
+}
+
+.nav-bar .menu div:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.reflect {
+        -webkit-box-reflect: right;
+        display: Inline-block;
+}
+
+.title:hover {
+    color: red;
+    /* i want to hover on title and want to transform the reflect div */
+    /* i think i need to use the js for this purpose */
+}
+
+
+
+/* main content css */
+
+.main-content-img {
+    background-image: url("/assets/back-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #000;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    z-index: -2;
+}
+
+.main-content-img .site-tagline {
+    text-align: center;
+    padding-top: 20%;
+    font-size: 400%;
+    text-align: center;   
+    
+}
+
+
+.main-content-img .subtitle {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 80%;
+    text-align: center;  
+    font-style: italic; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.second-tagline {
+    text-align: center;
+    background-color: #E8E7E7;
+    padding: 10px;
+}
+.shop-now {
+    margin: 0 auto 15px auto;
+    /* margin-bottom: 16px; */
+    padding: 15px 35px;
+    background-color: #000;
+    color: white;
+    width: 100px;
+}
+.shop-now a {
+    text-decoration: none;
+    color: white;
+}
+
+.shop-now:hover {
+    transform: scale(1.09);
+    transition: 100ms ease-in; 
+}
+
+
+/* prduct cards */
+.four-product-card {
+    display: flex;
+}
+
+.prod-desc{
+    text-align: center;
+}
+
+.product-card {
+    width: 25%;
+    padding: 23px;
+}
+
+.new-in {
+    margin: 0 auto;
+    width: 110px;
+    text-transform: uppercase;
+    font-size: 30px;
+    word-spacing: 1.2px;
+}
+
+.prdct-pic {
+    height: auto;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.prdct-pic img {
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
+}
+.prdct-title, .prdct-price{
+    width: 100%;
+    text-align: center;
+}
+
+.prdct-size {
+    display: flex;
+    margin-left: 25%;
+    margin-bottom: 5px;
+}
+
+.prdct-size div {
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+    color: rgba(128, 128, 128, 0.775);
+    text-align: center;
+    border-color: yellowgreen;
+    box-shadow: blue;
+    border: 3px solid rgba(128, 128, 128, 0.775);
+    /* font-size: em; */
+    margin: 10px;
+}
+
+.prdct-size div:hover{
+    border: 3px solid black;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.prdct-option {
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 35px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.prdct-option {
+    /* color: black;
+    background-color: white; */
+    border: #000;
+    box-shadow: 1px;
+    line-height: 3px;
+}
+
+
+/* bacterial proficiency image css */
+.bact-free-banner {
+    background-image: url('https://maskk.com/wp-content/uploads/2021/12/banner-bfe-2022-min.jpg');
+    margin: 0px 25px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.banner-text{
+    margin-left: 7%;
+    padding-top: 10%;
+}
+.bact-percent {
+    font-size: 50px;
+
+}
+
+.bact-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.banner-icon{
+    display: flex;
+}
+.banner-icon div{
+    padding: 15px;
+}
+
+.banner-btn{
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+.banner-btn:hover{
+    transform: scale(1.09);
+    transition: 0.4s ease;
+}
+
+.middle-banner {
+
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.banner-shop-text {
+    font-size: 37px;
+    font-weight: 400;
+}
+
+.middle-four-banner{
+    display: flex;
+}
+.banner-mask-text {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.middle-desc{
+    /* width: 100%; */
+    text-align: center;
+    transform: translate(50% ,-150%);
+    color: white;
+    position: absolute;
+    z-index: 10;
+}
+.middle-desc input{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 0px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    cursor: pointer;    
+}
+
+
+.mask-squad {
+    background-image: url(https://maskk.com/wp-content/themes/maskk/img/maskk-squad-desktop.jpg);
+    font-size: 123px;
+    padding-left: 7%;
+}
+
+.mask-squad a {
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px !important;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mask-squad a:hover {
+    background-color: #d1bc3e;
+}
+
+.shop-wrapper{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.shop-wrapper img{
+    background-size: cover;
+    margin-top: -100px;
+}
+
+.shop-desc{
+    position: relative;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+.shop-btn{
+    margin-top: 50px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.shop-btn:hover{
+    background-color: yellow;
+    border: 2px solid yellow;
+    color: black;
+}
+
+.share-your-mask {
+    font-size: 23px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin: 0 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* product quality css */
+.product-quality {
+    padding-top: 15px;
+    display: flex;
+    background-color: #E8E7E7;
+}
+
+.product-quality > p {
+    font-size: 23px;
+
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+.icon + p {
+    padding: 5px;
+    padding-top: 0px !important; 
+}
+
+/* newsletter */
+.newsletter {
+    padding: 50px;
+    background-color: #E8E7E7;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter .letter {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.letter-txt {
+    padding-bottom: 20px;
+}
+.email {
+    padding-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.email:focus {
+    outline: none;
+}
+.email:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: .7s;
+}
+
+.email:focus +  div {
+    height: 3px;
+    background-color: #000;
+    transform: scaleX(1);
+    transition: all .7s ease-out;  
+}
+
+.rular {
+    width: 300px;
+    height: 1px;
+    background-color: grey;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+.submit-button:hover {
+    transform: scale(1.09);
+    transition: 100ms ease-in;   
+}
+
+
+
+
+/* footer css */
+.footer {
+    margin: 50px 20px;
+    text-align: center;
+}
+
+/* make the footer followed in full screen */
+
+.footer .footer-title {
+    font-size: 125%;
+    text-transform: uppercase;
+}
+
+.footer div {
+    text-transform: capitalize;
+}
+
+
+/* footer grid */
+.grid-header {
+    margin: 0px 0px;
+    text-align: left;
+}
+
+.grid-header div {
+    font-size: 12px;
+}
+
+.grid-icon {
+    font-size: 16px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17% 17% 5%;
+    margin-bottom: 30px;
+}
+
+.footer-logo{
+    width: 10%;
+    margin: 0 auto;
+}
+
+.footer-footer {
+    font-size: 12px;
+}
+
